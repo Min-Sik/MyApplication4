@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application2</string>
+    <string name="calc">계산기</string>
+    <string name="equals">=</string>
+    <string name="song1">adele_hello</string>
+    <string name="song2">beyonce_halo</string>
+    <string name="pause">일시정지</string>
+    <string name="stop">정지</string>
+    <string name="play">재생</string>
+</resources>

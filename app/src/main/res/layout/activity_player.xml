@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerActivity"
+    android:orientation="vertical">
+
+    <Button style="@style/playerBtn"
+        android:id="@+id/song1"
+        android:text="@string/song1"/>
+
+    <Button style="@style/playerBtn"
+        android:id="@+id/song2"
+        android:text="@string/song2"/>
+
+    <Button style="@style/playerBtn"
+        android:id="@+id/pause"
+        android:text="@string/pause"/>
+
+    <Button style="@style/playerBtn"
+        android:id="@+id/stop"
+        android:text="@string/stop"/>
+
+
+</LinearLayout>

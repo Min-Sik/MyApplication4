@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalcActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText style="@style/CalcNum"
+            android:id="@+id/num1"
+            />
+
+        <TextView style="@style/CalcSign"
+            android:id="@+id/sign1"
+            android:text=""/>
+
+        <EditText style="@style/CalcNum"
+            android:id="@+id/num2"
+            />
+
+        <TextView style="@style/CalcSign"
+            android:id="@+id/sign2"
+            android:text="@string/equals"/>
+
+        <TextView style="@style/CalcNum"
+            android:layout_height="wrap_content"
+            android:id="@+id/result"
+            android:maxLength="10"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="9"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout style="@style/NumContainer"
+                >
+                <Button style="@style/NumBtn"
+                    android:text="7"
+                     />
+
+                <Button style="@style/NumBtn"
+                    android:text="8"
+                    />
+
+                <Button style="@style/NumBtn"
+                    android:text="9"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/NumContainer"
+                >
+                <Button style="@style/NumBtn"
+                    android:text="4"
+                    />
+
+                <Button style="@style/NumBtn"
+                    android:text="5"
+                    />
+
+                <Button style="@style/NumBtn"
+                    android:text="6"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/NumContainer"
+                >
+                <Button style="@style/NumBtn"
+                    android:text="1"
+                    />
+
+                <Button style="@style/NumBtn"
+                    android:text="2"
+                    />
+
+                <Button style="@style/NumBtn"
+                    android:text="3"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/NumContainer"
+                >
+                <Button style="@style/NumBtn"
+                    android:text="0"
+                    />
+
+                <Button style="@style/NumBtn"
+                    android:text="@string/equals"
+                    android:layout_weight="2"
+                    android:onClick="enter"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button style="@style/SignBtn"
+                android:text="C"/>
+
+            <Button style="@style/SignBtn"
+                android:text="+"/>
+
+            <Button style="@style/SignBtn"
+                android:text="-"/>
+
+            <Button style="@style/SignBtn"
+                android:text="*"/>
+
+            <Button style="@style/SignBtn"
+                android:text="/"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
